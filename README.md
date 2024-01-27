@@ -37,7 +37,9 @@ This is followed by setting the environment LLVM_DIR variable based on which ver
 export LLVM_DIR= /path/to/your/llvm11.1.0
 
 examples:
+
 export LLVM_DIR=/usr/local/Cellar/llvm@11/11.1.0_4/include/llvm
+
 export LLVM_DIR=/usr/include/llvm-17
 
 Make the directory and run ninja.
