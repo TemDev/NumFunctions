@@ -23,7 +23,7 @@ follow the instructions on the website to build it.
 
 Depending on system install ninja.
 
-Clone the repository.
+Clone/fork the repository.
 
 cd into any of the LLVM directories.
 
@@ -52,6 +52,9 @@ clang -c -emit-llvm ../program.c
 
 Run:
 
+For Mac OS:
 opt -load libFunctionCounter.dylib -function-counter -disable-output program.bc
-or
+
+or for Linux:
+opt -load ./libFunctionCounter.so -function-counter -enable-new-pm=0 < program.bc > /dev/null
 
